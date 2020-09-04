@@ -67,10 +67,10 @@ def even_nums(max)
   
 	i = 0
 	while i <= max
-      if i % 2 == 0
-          nums << i
-      end
-	i += 1
+		if i % 2 == 0
+			nums << i
+		end
+		i += 1
     end
   
 	return nums
@@ -107,10 +107,10 @@ def odd_range(min, max)
   
 	i = min
 	while i <= max
-      if i % 2 != 0
-          range << i
-      end
-    i += 1
+		if i % 2 != 0
+			range << i
+		end
+    	i += 1
     end
 
 	return range
@@ -192,10 +192,10 @@ def select_odds(numbers)
   
 	i = 0
 	while i < numbers.length
-      if numbers[i] % 2 == 1
-      	nums << numbers[i]
-      end
-    i += 1
+		if numbers[i] % 2 == 1
+			nums << numbers[i]
+		end
+		i += 1
     end
   
 	return nums
@@ -203,4 +203,25 @@ end
 
 select_odds([13, 4, 3, 7, 6, 11])
 select_odds([2, 4, 6])
+
+# Write a method select_long_words(words) that takes in an array of
+# words and returns a new array containing all of the words of the
+# original array that are longer than 4 characters.
+
+def select_long_words(words)
+	new_array = []
+  
+	i = 0
+	while i < words.length
+		if words[i].length > 4
+        	new_array << words[i]
+        end
+    	i += 1
+    end
+  
+    return new_array
+end
+
+select_long_words(["what", "are", "we", "eating", "dinner"])
+select_long_words(["keep", "coding"])
 
