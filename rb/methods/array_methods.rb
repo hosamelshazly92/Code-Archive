@@ -136,6 +136,27 @@ def reverse_range(min, max)
 	return range
 end
 
-reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]
-reverse_range(1, 7)   # => [6, 5, 4, 3, 2]
+reverse_range(10, 17)
+reverse_range(1, 7)
+
+# Write a method first_half(array) that takes in an array and returns a
+# new array containing the first half of the elements in the array. If
+# there is an odd number of elements, return the first half including
+# the middle element.
+
+def first_half(array)
+	new_array = []
+  
+	i = 0
+	while i < (array.length / 2.0)
+	new_array << array[i]
+	i += 1
+    end
+  
+	return new_array
+end
+
+print first_half(["Brian", "Abby", "David", "Ommi"])
+puts
+print first_half(["a", "b", "c", "d", "e"])
 
