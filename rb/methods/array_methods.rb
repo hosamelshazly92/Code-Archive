@@ -79,3 +79,22 @@ end
 print even_nums(10)
 print even_nums(5)
 
+# Write a method range(min, max) that takes in two numbers min and max.
+# The method should return an array containing all numbers from min to
+# max inclusive.
+
+def range(min, max)
+	range = []
+
+	i = min
+	while i <= max
+	range << i
+	i += 1
+    end
+  
+	return range
+end
+
+print range(2, 7)
+print range(13, 20)
+
