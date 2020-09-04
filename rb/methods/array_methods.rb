@@ -156,7 +156,30 @@ def first_half(array)
 	return new_array
 end
 
-print first_half(["Brian", "Abby", "David", "Ommi"])
-puts
-print first_half(["a", "b", "c", "d", "e"])
+first_half(["Brian", "Abby", "David", "Ommi"])
+first_half(["a", "b", "c", "d", "e"])
+
+# Write a method factors_of(num) that takes in a num and returns an
+# array of all positive numbers less than or equal to num that can
+# divide num.
+
+def factors_of(num)
+	nums = []
+  
+	i = 1
+	while i <= num
+		if num % i == 0
+		nums << i
+        end
+	i += 1
+    end
+  
+	return nums
+end
+
+factors_of(3)
+factors_of(4)
+factors_of(8)
+factors_of(9)
+factors_of(16)
 
