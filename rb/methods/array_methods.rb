@@ -48,9 +48,9 @@ def element_times_index(numbers)
   
 	i = 0
 	while i < numbers.length
-	item = numbers[i]*i
-	multi << item
-	i += 1
+		item = numbers[i]*i
+		multi << item
+		i += 1
     end
 
 	return multi
@@ -88,8 +88,8 @@ def range(min, max)
 
 	i = min
 	while i <= max
-	range << i
-	i += 1
+		range << i
+		i += 1
     end
   
 	return range
@@ -129,8 +129,8 @@ def reverse_range(min, max)
   
 	i = max - 1
 	while i > min
-	range << i
-	i -= 1
+		range << i
+		i -= 1
     end
   
 	return range
@@ -149,8 +149,8 @@ def first_half(array)
   
 	i = 0
 	while i < (array.length / 2.0)
-	new_array << array[i]
-	i += 1
+		new_array << array[i]
+		i += 1
     end
   
 	return new_array
@@ -169,7 +169,7 @@ def factors_of(num)
 	i = 1
 	while i <= num
 		if num % i == 0
-		nums << i
+			nums << i
         end
 	i += 1
     end
@@ -182,4 +182,25 @@ factors_of(4)
 factors_of(8)
 factors_of(9)
 factors_of(16)
+
+# Write a method select_odds(numbers) that takes in an array of numbers
+# and returns a new array containing the odd numbers of the original
+# array.
+
+def select_odds(numbers)
+	nums = []
+  
+	i = 0
+	while i < numbers.length
+      if numbers[i] % 2 == 1
+      	nums << numbers[i]
+      end
+    i += 1
+    end
+  
+	return nums
+end
+
+select_odds([13, 4, 3, 7, 6, 11])
+select_odds([2, 4, 6])
 
