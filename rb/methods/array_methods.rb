@@ -56,6 +56,26 @@ def element_times_index(numbers)
 	return multi
 end
 
-print element_times_index([4, 7, 6, 5])       # => [0, 7, 12, 15]
-puts
-print element_times_index([1, 1, 1, 1, 1, 1]) # => [0, 1, 2, 3, 4, 5]
+element_times_index([4, 7, 6, 5])
+element_times_index([1, 1, 1, 1, 1, 1])
+
+# Write a method even_nums(max) that takes in a number max and returns
+# an array containing all even numbers from 0 to max
+
+def even_nums(max)
+	nums = []
+  
+	i = 0
+	while i <= max
+      if i % 2 == 0
+          nums << i
+      end
+	i += 1
+    end
+  
+	return nums
+end
+
+print even_nums(10)
+print even_nums(5)
+
