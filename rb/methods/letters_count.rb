@@ -13,3 +13,19 @@ counter
 array = counter.sort_by {|k, v| v}
 
 puts "Most frequent letter: \"" + array[-1][0] + "\""
+
+# get specific letter frequency
+
+def letter_count(str)
+  count = {"a"=>0, "o"=>0}
+
+  str.each_char do |i|
+    if (i == "a" || i == "o")
+      count[i] += 1
+    end
+  end
+
+  return count
+end
+
+print letter_count(str)
