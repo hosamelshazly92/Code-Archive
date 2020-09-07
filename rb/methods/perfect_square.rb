@@ -14,6 +14,7 @@ def perfect_square?(num)
   return false
 end
 
+# test case
 perfect_square?(5)
 perfect_square?(12)
 perfect_square?(30)

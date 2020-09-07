@@ -10,12 +10,13 @@ def doubler(numbers)
 		num = numbers[i]*2
 		double << num
 		i += 1
-    end
+  end
 	
 	return double
 end
 
 # use print to get array literal
+# test case
 doubler([1, 2, 3, 4])
 doubler([7, 1, 8])
 
@@ -31,11 +32,12 @@ def yell(words)
 		words[i] += "!"
 		new_words << words[i]
 		i += 1
-    end
+  end
 	
 	return new_words
 end
 
+# test case
 yell(["hello", "world"])
 yell(["code", "is", "cool"])
 
@@ -51,11 +53,12 @@ def element_times_index(numbers)
 		item = numbers[i]*i
 		multi << item
 		i += 1
-    end
+  end
 
 	return multi
 end
 
+# test case
 element_times_index([4, 7, 6, 5])
 element_times_index([1, 1, 1, 1, 1, 1])
 
@@ -71,11 +74,12 @@ def even_nums(max)
 			nums << i
 		end
 		i += 1
-    end
+  end
   
 	return nums
 end
 
+# test case
 even_nums(10)
 even_nums(5)
 
@@ -90,11 +94,12 @@ def range(min, max)
 	while i <= max
 		range << i
 		i += 1
-    end
+  end
   
 	return range
 end
 
+# test case
 range(2, 7)
 range(13, 20)
 
@@ -111,11 +116,12 @@ def odd_range(min, max)
 			range << i
 		end
     	i += 1
-    end
+  end
 
 	return range
 end
 
+# test case
 odd_range(11, 18)
 odd_range(3, 7)
 
@@ -131,11 +137,12 @@ def reverse_range(min, max)
 	while i > min
 		range << i
 		i -= 1
-    end
+  end
   
 	return range
 end
 
+# test case
 reverse_range(10, 17)
 reverse_range(1, 7)
 
@@ -151,11 +158,12 @@ def first_half(array)
 	while i < (array.length / 2.0)
 		new_array << array[i]
 		i += 1
-    end
+  end
   
 	return new_array
 end
 
+# test case
 first_half(["Brian", "Abby", "David", "Ommi"])
 first_half(["a", "b", "c", "d", "e"])
 
@@ -170,13 +178,14 @@ def factors_of(num)
 	while i <= num
 		if num % i == 0
 			nums << i
-        end
-	i += 1
     end
+		i += 1
+  end
   
 	return nums
 end
 
+# test case
 factors_of(3)
 factors_of(4)
 factors_of(8)
@@ -196,11 +205,12 @@ def select_odds(numbers)
 			nums << numbers[i]
 		end
 		i += 1
-    end
+  end
   
 	return nums
 end
 
+# test case
 select_odds([13, 4, 3, 7, 6, 11])
 select_odds([2, 4, 6])
 
@@ -214,13 +224,14 @@ def select_long_words(words)
 	i = 0
 	while i < words.length
 		if words[i].length > 4
-        	new_array << words[i]
-        end
-    	i += 1
+  		new_array << words[i]
     end
+  	i += 1
+  end
   
-    return new_array
+  return new_array
 end
 
+# test case
 select_long_words(["what", "are", "we", "eating", "dinner"])
 select_long_words(["keep", "coding"])

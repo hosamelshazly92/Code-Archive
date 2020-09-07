@@ -1,9 +1,9 @@
 # reverse a word
 
 def reverse(word)
-	i = 0
 	reversed = ""
 
+  i = 0
 	while i < word.length
 		reversed = word[i] + reversed
 		i += 1
@@ -12,6 +12,7 @@ def reverse(word)
 	return reversed
 end
 
-puts reverse("cat")
-puts reverse("hosam")
-puts reverse("elshazly")
+# test case
+reverse("cat")
+reverse("hosam")
+reverse("elshazly")

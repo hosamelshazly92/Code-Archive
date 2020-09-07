@@ -25,6 +25,7 @@ def is_capitalized(word)
 	end
 end
 
+# test case
 is_valid_name("Kush Patel")
 is_valid_name("Daniel")
 is_valid_name("Robert Downey Jr")
@@ -57,9 +58,10 @@ def is_valid_email(str)
 	end
 end
 
+# test case
 is_valid_email("abc@xy.z")        
 is_valid_email("jdoe@gmail.com")  
 is_valid_email("jdoe@g@mail.com") 
 is_valid_email("jdoe42@gmail.com")
 is_valid_email("jdoegmail.com")   
-is_valid_email("az@email")        
+is_valid_email("az@email")

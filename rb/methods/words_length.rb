@@ -11,4 +11,5 @@ def words_length(sentence)
   return lengths
 end
 
-print words_length(para)
+# test case
+words_length(para)

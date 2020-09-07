@@ -1,9 +1,9 @@
 # get factorial of a number
 
 def factorial(num)
-	i = 1
 	result = 1
 
+  i = 1
 	while i <= num
 		result *= i
 		i += 1
@@ -12,6 +12,7 @@ def factorial(num)
 	return result
 end
 
-puts factorial(1)
-puts factorial(3)
-puts factorial(5)
+# test case
+factorial(1)
+factorial(3)
+factorial(5)

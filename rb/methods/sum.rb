@@ -1,9 +1,9 @@
 # get the sum of a number
 
 def sum(num)
-	i = 1
 	sum = 0
 
+  i = 1
 	while i <= num
 		sum += i
 		i += 1
@@ -12,6 +12,7 @@ def sum(num)
 	return sum
 end
 
-puts sum(1)
-puts sum(2)
-puts sum(4)
+# test case
+sum(1)
+sum(2)
+sum(4)

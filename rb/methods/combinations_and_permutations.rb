@@ -16,5 +16,6 @@ def combinations(arr)
   return pairs
 end
 
-combinations(["a", "b", "c"]);
-combinations([0, 1, 2, 3]);
+# test case
+combinations(["a", "b", "c"])
+combinations([0, 1, 2, 3])

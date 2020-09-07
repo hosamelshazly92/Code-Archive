@@ -28,4 +28,5 @@ def letter_count(str)
   return count
 end
 
-print letter_count(str)
+# test case
+letter_count(str)

@@ -21,4 +21,5 @@ def repeat(message, times)
 	end
 end
 
+# test case
 repeat("welcome sir, access granted", 3)

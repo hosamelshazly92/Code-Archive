@@ -6,7 +6,5 @@ def convert_case(arr)
   return new_arr
 end
 
-array = ["apple", "bootCAMP", "caRrot", "DaNce"]
-
 # test case
-convert_case(array)
+convert_case(["apple", "bootCAMP", "caRrot", "DaNce"])

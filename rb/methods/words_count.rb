@@ -4,7 +4,9 @@
 def word_count(arr)
     count = Hash.new(0)
     arr.each { |i| count[i] += 1 }
+    
     return count
 end
 
+# test case
 word_count(["red", "red", "blue", "green"])

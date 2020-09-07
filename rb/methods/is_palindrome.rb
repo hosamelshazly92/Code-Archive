@@ -1,17 +1,18 @@
 # check palindromes
 
 def is_palindrome(word)
-	i = 0
 	reversed = ""
   
+  i = 0
 	while i < word.length
 		reversed = word[i] + reversed
 		i += 1
-    end
+  end
   
 	return word == reversed
 end
 
-puts is_palindrome("racecar")
-puts is_palindrome("kayak")
-puts is_palindrome("bootcamp")
+# test case
+is_palindrome("racecar")
+is_palindrome("kayak")
+is_palindrome("bootcamp")
