@@ -224,4 +224,3 @@ end
 
 select_long_words(["what", "are", "we", "eating", "dinner"])
 select_long_words(["keep", "coding"])
-

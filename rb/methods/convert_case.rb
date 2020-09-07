@@ -1,8 +1,12 @@
 # convert word case
 
-arr = ["apple", "bootCAMP", "caRrot", "DaNce"]
+def convert_case(arr)
+  new_arr = arr.map {|i| i[0].upcase + i[1..-1].downcase}
 
-new_arr = arr.map {|i| i[0].upcase + i[1..-1].downcase}
+  return new_arr
+end
 
-arr
-new_arr
+array = ["apple", "bootCAMP", "caRrot", "DaNce"]
+
+# test case
+convert_case(array)
