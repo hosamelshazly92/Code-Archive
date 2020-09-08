@@ -1,4 +1,4 @@
-# check palindromes
+# is palindrome?
 
 def is_palindrome(word)
 	reversed = ""
