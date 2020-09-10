@@ -8,8 +8,8 @@ def sayMessage # parameters
 end
 
 # call method
-puts sayMessage() # arguments
-puts sayMessage # this is preferred since greet does not expect parameters
+sayMessage() # arguments
+sayMessage # this is preferred since greet does not expect parameters
 
 # print a message a number of times
 
