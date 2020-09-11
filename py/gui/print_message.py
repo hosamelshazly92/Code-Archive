@@ -50,3 +50,6 @@ label2.place(relx=0, rely=0.4, relwidth=1)
 
 #### run app
 root.mainloop()
+
+#### pyinstaller command
+# pyinstaller.exe --onefile print_message.py
