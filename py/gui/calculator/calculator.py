@@ -14,6 +14,17 @@ def button_click(num):
 def button_clear():
     e.delete(0, END)
 
+def button_add():
+    first_num = e.get()
+    global f_num
+    f_num = int(first_num)
+    e.delete(0, END)
+
+def button_equal():
+    second_num = e.get()
+    e.delete(0, END)
+    e.insert(0, f_num + int(second_num))
+
 # buttons
 button_1 = Button(root, text="1", padx=30, pady=15, command=lambda: button_click(1))
 button_2 = Button(root, text="2", padx=30, pady=15, command=lambda: button_click(2))
@@ -26,9 +37,9 @@ button_8 = Button(root, text="8", padx=30, pady=15, command=lambda: button_click
 button_9 = Button(root, text="9", padx=30, pady=15, command=lambda: button_click(9))
 button_0 = Button(root, text="0", padx=30, pady=15, command=lambda: button_click(0))
 
-button_equal = Button(root, text="=", padx=30, pady=15, command=lambda: button_click())
+button_equal = Button(root, text="=", padx=30, pady=15, command=button_equal)
 button_clear = Button(root, text="C", padx=30, pady=15, command=button_clear)
-button_addition = Button(root, text="+", padx=30, pady=15, command=lambda: button_click())
+button_addition = Button(root, text="+", padx=30, pady=15, command=button_add)
 
 # place buttons
 button_1.grid(row=3, column=0)
