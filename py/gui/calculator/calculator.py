@@ -4,6 +4,9 @@ root = Tk()
 root.title("Calculator")
 root.iconbitmap('c:/Users/hosam/GitHub/code-vault/py/gui/calculator/ico/calculator.ico')
 
+button_exit = Button(root, text="Exit", bg="red", fg="white", command=root.quit)
+button_exit.grid(row=0, column=4)
+
 e = Entry(root, width=35, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
