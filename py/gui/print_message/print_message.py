@@ -32,8 +32,10 @@ label.place(relx=0, rely=0.1, relwidth=0.25)
 
 entry = tk.Entry(frame)
 entry.place(relx=0.4, rely=0.1, relwidth=0.5)
+entry.insert(0, "Enter your text here...")
 
 #### create button
+# use command to call functions by name
 button = tk.Button(frame, text="Send", bg="green", fg="white", font=32, pady=5, command=lambda: print_input(entry.get()))
 # place button
 button.pack(side="bottom", fill="x")
