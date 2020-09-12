@@ -10,7 +10,7 @@ def print_input(input):
 
 #### create window via root
 root = tk.Tk()
-
+root.title("Print Message")
 #### create container
 canvas = tk.Canvas(root, width=WDH, height=HGT)
 # place canvas
