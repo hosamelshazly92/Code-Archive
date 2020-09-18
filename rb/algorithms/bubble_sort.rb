@@ -1,9 +1,17 @@
 # buuble sort algorithm
 def bubble_sort(arr)
+    sorted = false
 
-    (0...arr.length - 1).each do |i|
-        if arr[i] > arr[i + 1]
-            arr[i], arr[i + 1] = arr[i + 1], arr[i]
+    # iteratefor  multiple passes
+    while !sorted
+        sorted = true
+
+        # create a pass
+        (0...arr.length - 1).each do |i|
+            if arr[i] > arr[i + 1]
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                sorted = false
+            end
         end
     end
 
