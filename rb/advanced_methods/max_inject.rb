@@ -11,5 +11,6 @@ def max_inject(*arr)
     end
 end
 
-p max_inject(1, -4, 0, 7, 5)  # => 7
-p max_inject(30, 28, 18)      # => 30
+# test case
+max_inject(1, -4, 0, 7, 5)
+max_inject(30, 28, 18)
