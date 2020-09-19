@@ -12,7 +12,9 @@ people_1 = [
     {name: "Alice", age: 15},
     {name: "Bob", age: 16}
 ]
-p adult_in_group?(people_1)    # => true
+
+# test case
+adult_in_group?(people_1)
 
 people_2 = [
     {name: "Jane", age: 12},
@@ -20,4 +22,6 @@ people_2 = [
     {name: "Ashley", age: 10},
     {name: "Bill", age: 16}
 ]
-p adult_in_group?(people_2)    # => false
+
+# test case
+adult_in_group?(people_2)
